@@ -4,8 +4,8 @@
  */
 package com.parkinglot.controller;
 
-import com.parkinglot.bean.Response;
-import com.parkinglot.bean.SlotBooking;
+import com.parkinglot.model.Response;
+import com.parkinglot.model.SlotBooking;
 import com.parkinglot.service.ParkingLotService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

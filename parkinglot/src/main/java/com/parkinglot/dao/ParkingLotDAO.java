@@ -4,9 +4,9 @@
  */
 package com.parkinglot.dao;
 
-import com.parkinglot.bean.Slot;
-import com.parkinglot.bean.Ticket;
-import com.parkinglot.bean.VehicleType;
+import com.parkinglot.model.Slot;
+import com.parkinglot.model.Ticket;
+import com.parkinglot.model.VehicleType;
 import com.parkinglot.sql.SqlQueries;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

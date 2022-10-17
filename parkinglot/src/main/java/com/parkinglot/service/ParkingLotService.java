@@ -4,13 +4,13 @@
  */
 package com.parkinglot.service;
 
-import com.parkinglot.bean.Floor;
-import com.parkinglot.bean.ParkingLot;
-import com.parkinglot.bean.Response;
-import com.parkinglot.bean.Slot;
-import com.parkinglot.bean.SlotBooking;
-import com.parkinglot.bean.Ticket;
-import com.parkinglot.bean.VehicleType;
+import com.parkinglot.model.Floor;
+import com.parkinglot.model.ParkingLot;
+import com.parkinglot.model.Response;
+import com.parkinglot.model.Slot;
+import com.parkinglot.model.SlotBooking;
+import com.parkinglot.model.Ticket;
+import com.parkinglot.model.VehicleType;
 import com.parkinglot.dao.ParkingLotDAO;
 import java.sql.Timestamp;
 import java.time.Instant;
