@@ -4,6 +4,7 @@
  */
 package com.splitwise.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
 
 /**
@@ -11,9 +12,12 @@ import java.util.List;
  * @author priyank
  */
 public class Group {
+
     private String groupId;
     private String groupName;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private List<User> users;
+    private List<Expense> expenses;
 
     public String getGroupId() {
         return groupId;
@@ -39,10 +43,17 @@ public class Group {
         this.users = users;
     }
 
+    public List<Expense> getExpenses() {
+        return expenses;
+    }
+
+    public void setExpenses(List<Expense> expenses) {
+        this.expenses = expenses;
+    }
+
     @Override
     public String toString() {
-        return "Group{" + "groupId=" + groupId + ", groupName=" + groupName + ", users=" + users + '}';
+        return "Group{" + "groupId=" + groupId + ", groupName=" + groupName + ", users=" + users + ", expenses=" + expenses + '}';
     }
-    
-    
+
 }

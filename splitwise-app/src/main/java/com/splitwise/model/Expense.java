@@ -4,7 +4,7 @@
  */
 package com.splitwise.model;
 
-import java.util.Date;
+import java.util.List;
 
 /**
  *
@@ -13,7 +13,7 @@ import java.util.Date;
 public class Expense {
     private String expenseId;
     private String description;
-    private Date expenseOn;
+    private List<UserShare> userShares;
 
     public String getExpenseId() {
         return expenseId;
@@ -31,18 +31,17 @@ public class Expense {
         this.description = description;
     }
 
-    public Date getExpenseOn() {
-        return expenseOn;
+    public List<UserShare> getUserShares() {
+        return userShares;
     }
 
-    public void setExpenseOn(Date expenseOn) {
-        this.expenseOn = expenseOn;
+    public void setUserShares(List<UserShare> userShares) {
+        this.userShares = userShares;
     }
 
     @Override
     public String toString() {
-        return "Expense{" + "expenseId=" + expenseId + ", description=" + description + ", expenseOn=" + expenseOn + '}';
+        return "Expense{" + "expenseId=" + expenseId + ", description=" + description + ", userShares=" + userShares + '}';
     }
-    
     
 }

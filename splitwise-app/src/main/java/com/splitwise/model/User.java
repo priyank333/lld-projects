@@ -4,6 +4,8 @@
  */
 package com.splitwise.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 /**
  *
  * @author priyank
@@ -11,6 +13,7 @@ package com.splitwise.model;
 public class User {
     private String userId;
     private String userName;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private String emailId;
 
     public User(String userId, String userName, String emailId) {
